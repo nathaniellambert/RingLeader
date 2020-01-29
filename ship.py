@@ -155,6 +155,8 @@ class Ship(object):
         if self.y > HEIGHT:
             self.y = HEIGHT
             self.vely = 0
+        if self.y < (HEIGHT-175):
+            self.y = (HEIGHT-175)
         elif self.y < 0:
             self.y = 0
             self.vely = 0
